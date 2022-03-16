@@ -1,0 +1,116 @@
+* {
+ box-sizing: border-box;
+}
+
+
+html, body {
+ position: relative;
+ font-family: 'Lato', sans-serif;
+
+}
+h1 {
+ text-transform: uppercase;
+ word-spacing: 10px;
+ margin-left: 10px;
+ text-align: center;
+ color: white;
+ text-shadow: 0px 0px 10px black;
+}
+.grid-container {
+ display: flex;
+ flex-wrap: wrap;
+ flex-direction: column;
+}
+.card {
+ text-align: center;
+ border: 1px solid #f1f1f1;
+ border-radius: 10px;
+ box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+ margin: 5px;
+ display: flex;
+ padding: 20px;
+ flex-wrap: wrap;
+ justify-content: space-around;
+}
+.card > .text-container {
+ line-height: 0.5;
+ margin-left: 10px;
+}
+.text-container > p {
+    color: rgb(151, 128, 128);
+}
+img {
+ border-radius: 50%;
+ width: 100px;
+ height: 100px;
+}
+
+.overlay {
+   
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.modal {
+     background-color: #f1f1f1;
+     width: 300px;
+    position: relative;
+    margin: 10% auto;
+    padding: 30px 20px;
+    border-radius: 5px;
+    border: 1px solid #778;
+}
+.modal-close {
+    position: absolute;
+    top: 2px;
+    right: 15px;
+    cursor: pointer;
+}
+.hidden {
+    display: none;
+}
+.modal-text {
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+.grid-container {
+    
+    flex-direction: row;
+    justify-content: space-around;
+}
+.card {
+    width: 47%;
+    justify-content: flex-start;
+   padding: 20px 5px;
+   margin-bottom: 25px;
+}
+.modal {
+    width: 375px;
+}
+}
+@media screen and (min-width: 1050px) {
+    .grid-container {
+        justify-content: flex-start;
+        margin-top: 40px;
+    }
+    .card {
+        max-width: 31%;
+       margin: 0px; 
+       margin-bottom: 20px;
+       margin: 10px;
+       padding: 20px 0px;
+      flex-wrap: nowrap;
+      margin-bottom: 30px;
+    }
+    .card > .text-container {
+      text-align: left;
+      margin-left: 5px;
+    }
+    
+    }
+    
+    
